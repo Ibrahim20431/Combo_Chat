@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_12sdp"
+    android:id="@+id/item_view">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/person_image"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:src="@drawable/person"
+        app:civ_border_color_end="@color/aquamarine"
+        app:civ_border_color_start="@color/green"
+        app:civ_border_width="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:text="@string/person_name"
+        android:textSize="@dimen/_23sdp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/person_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/last_message"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="@string/last_message_from_me"
+        android:textSize="@dimen/_18sdp"
+        android:padding="@dimen/_6sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/person_image"
+        app:layout_constraintTop_toBottomOf="@id/person_name"
+        android:contentDescription="@string/last_message_from_me"
+        tools:ignore="TextSizeCheck"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:src="@drawable/active_now"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/person_image"
+        app:layout_constraintEnd_toEndOf="@+id/person_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/person_image"
+        app:layout_constraintTop_toTopOf="@+id/person_image"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible"
+        android:contentDescription="@string/profile_image"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

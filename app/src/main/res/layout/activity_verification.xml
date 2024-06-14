@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationActivity"
+    android:gravity="center_horizontal"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="@drawable/back11">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/veriification"
+        android:contentDescription="@string/otp_verification"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/otp_verification"
+        android:textSize="@dimen/_30sdp"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold"
+        android:contentDescription="@string/otp_verification"
+        tools:ignore="TextSizeCheck"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verification_description"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:contentDescription="@string/verification_description"
+        tools:ignore="TextSizeCheck"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="@dimen/_20sdp"
+        android:layout_margin="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:background="@color/azure"
+        android:elevation="@dimen/_30sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:textAlignment="center"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:imeOptions="actionDone"
+            android:textColor="@color/black"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:background="@drawable/editetext_background"
+            android:autofillHints="phone"
+            tools:ignore="TextSizeCheck"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/send_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="serif"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/send_verification"
+                android:background="@drawable/sendbtn_background"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/aliceblue"
+                android:textSize="@dimen/_18sdp"
+                android:elevation="@dimen/_25sdp"
+                android:contentDescription="@string/send_verification"
+                tools:ignore="TextSizeCheck"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

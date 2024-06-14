@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="end"
+    android:gravity="end">
+
+    <LinearLayout
+        android:id="@+id/messagetext_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/send_design">
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:text="@string/message"
+            android:textAlignment="center"
+            android:contentDescription="@string/message"
+            tools:ignore="TextSizeCheck"/>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/message_image"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:src="@drawable/image_placeholder"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:contentDescription="@string/image_sended"/>
+</LinearLayout>

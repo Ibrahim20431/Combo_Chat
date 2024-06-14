@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ComboChat</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="verification_description">We Will send you an ONE TIME CODE\nin this Mobile Number...</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="send_verification">Send Code</string>
+    <string name="otp_code">OTP Code</string>
+    <string name="verify">Verify</string>
+    <string name="enter_the_opt_code_to_verify">Enter the OTP Code to Verify</string>
+    <string name="verify_20_01116351078">Verify +20-01116351078</string>
+    <string name="verify_20_">Verify +20-</string>
+    <string name="verify_image">Verify Image</string>
+    <string name="resend_otp_again">Resend OTP again</string>
+    <string name="setup_profile">Setup Profile</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="set_your_name_and_choose_image">Please Choose your Image\nand Type your Name</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="type_your_name">Type your Name</string>
+    <string name="chats">Chats</string>
+    <string name="groups">Groups</string>
+    <string name="settings">Settings</string>
+    <string name="nul"> </string>
+    <string name="person_search">Person Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bottom_navigation_menu">bottom navigation menu</string>
+    <string name="person_name">Person Name</string>
+    <string name="last_message_from_me">Last message from me</string>
+    <string name="back_to_main">Back to Main</string>
+    <string name="online">Online</string>
+    <string name="message">Message</string>
+    <string name="add_file">Add File</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="send">Send</string>
+    <string name="image_sended">Image Sended</string>
+    <string name="delete_for_me">Delete For Me</string>
+    <string name="delete_for_everyone">Delete For Everyone</string>
+    <string name="cancel">Cancel</string>
+</resources>

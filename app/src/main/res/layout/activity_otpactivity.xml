@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="@drawable/back11"
+    tools:context=".OTPActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/verify"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/verify_image"/>
+
+    <TextView
+        android:id="@+id/verify_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_20_01116351078"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/darkblue"
+        android:contentDescription="@string/verify_20_"
+        tools:ignore="TextSizeCheck"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_the_opt_code_to_verify"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:textColor="@color/darkcyan"
+        android:contentDescription="@string/enter_the_opt_code_to_verify"
+        tools:ignore="TextSizeCheck"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20sdp"
+        android:layout_margin="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:background="@color/azure"
+        android:elevation="@dimen/_30sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.otpview.OTPTextView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/_20sdp"
+                app:otp_text_size="@dimen/_18sdp"
+                app:otp_box_background="@drawable/otp_background"
+                app:height="@dimen/_50sdp"
+                app:width="@dimen/_35sdp"
+                app:hide_otp="false"
+                app:length="6"
+                app:otp=""/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/sendbtn_background"
+                android:fontFamily="serif"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/verify"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/aliceblue"
+                android:textSize="@dimen/_20sdp"
+                android:contentDescription="@string/verify"
+                tools:ignore="TextSizeCheck"/>
+
+            <TextView
+                android:id="@+id/resend_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/resend_otp_again"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/darkblue"
+                android:contentDescription="@string/resend_otp_again"
+                tools:ignore="TextSizeCheck" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

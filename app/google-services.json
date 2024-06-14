@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "944067024891",
+    "project_id": "combochat-51b4e",
+    "storage_bucket": "combochat-51b4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944067024891:android:5c7abfc5114a7245891d5e",
+        "android_client_info": {
+          "package_name": "com.chats.combochat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgwvmsuImrVfBwP9My1fSL6pkEfsbLImc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
